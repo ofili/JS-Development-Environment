@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "JavaScript development environment by Ofili Lewis",
 	"scripts": {
-		"prestart": "node buildscripts/start_message.js",
-		"start": "node buildscripts/src_server.js",
+		"prestart": "babel-node buildscripts/start_message.js",
+		"start": "babel-node buildscripts/src_server.js",
 		"localtunnel": "lt --port 3000",
 		"share" : "npm-run-all --parallel start localtunnel"
 	},
