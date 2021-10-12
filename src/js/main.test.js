@@ -2,7 +2,8 @@
 var chai = require('chai');
 var expect = chai.expect;
 
-import jsdom from "jsdom";
+//import jsdom from 'jsdom';
+const jsdom = require("jsdom");
 import fs from 'fs';
 
 describe('Our first test', () => {
