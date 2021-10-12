@@ -1,4 +1,7 @@
-import { expect } from 'chai';
+//import { expect } from 'chai';
+var chai = require('chai');
+var expect = chai.expect;
+
 import jsdom from "jsdom";
 import fs from 'fs';
 
