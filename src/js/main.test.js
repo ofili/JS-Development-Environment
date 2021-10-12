@@ -4,7 +4,7 @@ var expect = chai.expect;
 
 //import jsdom from 'jsdom';
 const jsdom = require("jsdom");
-import fs from 'fs';
+const fs = require('fs');
 
 describe('Our first test', () => {
   it('should pass', () => {
