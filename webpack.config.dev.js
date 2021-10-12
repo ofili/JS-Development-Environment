@@ -3,7 +3,7 @@ import path from 'path';
 export default {
 	mode: 'development',
 	devtool: 'eval-source-map',
-	entry: '../src/js/main.js',
+	entry: './src/js/main.js',
 	output: {
 		path: path.resolve(__dirname, './src'),
 		publicPath: '/',
