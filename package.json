@@ -4,12 +4,14 @@
 	"description": "JavaScript development environment by Ofili Lewis",
 	"scripts": {
 		"prestart": "babel-node buildscripts/start_message.js",
-		"start": "npm-run-all --parallel open:src lint:watch",
+		"start": "npm-run-all --parallel open:src lint:watch test:watch",
 		"open:src": "babel-node buildscripts/src_server.js",
 		"localtunnel": "lt --port 3000",
-		"share" : "npm-run-all --parallel start localtunnel",
 		"lint" : "esw webpack.config.* src buildscripts --color",
-		"lint:watch" : "npm run lint -- --watch"
+		"lint:watch" : "npm run lint -- --watch",
+		"share" : "npm-run-all --parallel start localtunnel",
+		"test": "mocha --reporter progress buildscripts/test_setup.js \"src/**/*.test.js\"",
+		"test:watch": "npm run test -- --watch"
 	},
 	"author": "Ofili Lewis",
 	"license": "MIT",
