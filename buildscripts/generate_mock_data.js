@@ -6,7 +6,8 @@
 
 /* eslint-disable no-console */
 
-import { generate, extend } from 'json-schema-faker';
+//import { generate, extend } from 'json-schema-faker';
+const { generate, extend } = require('json-schema-faker');
 import { schema } from './mock_data_schema';
 const fs = require('fs');
 import chalk from "chalk";
